@@ -2,10 +2,9 @@
 /* Hello mentors, I have chosen a water theme for my assignment. Each segment is like a boat which is when interacted with (hover) wiggles like a boat on water. Since the elements are contained in a flexbox container other items also move around a bit similar to water waves affecting other boats in the vicinity. */
 
 
+@media only screen and (min-width:683px){
 
-
-
-body{
+    body{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -339,7 +338,351 @@ footer span div img {
     border-radius: 400px;
     margin: 10px 10px 10px 20px;
 }
+    
+}
 
-@media only screen and (max-width:600px){
+/* When the width of the screen get smaller than 600px this new style is appliedwhich is similar to the aspect ratio of a phone. This makes the website responsive to multiple devices.This code has the same theme just different arrangement on the screen.  */
+
+
+@media only screen and (max-width:683px){
+
+    body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    background-image:url(istockphoto-1136370254-612x612.jpg);
+}
+
+
+/* The top region where the name and navigation links are situated */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color:#005f73;
+    position: sticky;
+    top: 0;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 40px;
+    
+}
+header nav ul a { /* Used to control the nav redirecting links individually*/
+    margin-left: 30px;
+    font-size: larger;
+    color: #fef9ef;
+    text-decoration: none;
+
+    
+} 
+header nav ul a:hover{
+
+    text-shadow: 0px 1px white;
+
+}
+header div {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    font-size: larger;
+   
+}
+header div sub {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #fef9ef;
+}
+header h1{
+    margin-left: 40px;
+    color: #fef9ef;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+/* The about section which has the photo and the introduction text */
+#Outer{
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 200px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color:#fed9b7;
+    transition: border 500ms,background-image 700ms;
+}
+#Outer:hover{
+    display: flex;
+    justify-content: center;
+    border: 3px black solid;
+    border-radius: 200px;
+    margin-top: 50px;
+    background-color:#fed9b7;
+    
+}
+#About {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    border: 1px black solid;
+    border-radius: 200px;
+    background-color: #fdfcdc;
+    transition: border 200ms;
+}
+#About:hover{
+
+    border: 3px black solid;
+
+}
+#Profile {
+    
+    width:250px;
+    border-radius: 300px;
+    height: 350px;
+    margin-left: 30px;
+    margin-top: 50px;
+    border: 2px black solid;
+}
+
+
+p.description{
+    display: flex;
+    justify-self:center;
+    margin: 60px 40px 60px 40px;
+    font-family: serif;
+}
+
+/* Project area  */
+
+section h2 { /*used for the project heading */
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Projects span{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#Projects h2{
+        text-align: center;
+}
+.project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px black solid;
+    border-radius: 20px;
+    margin: 10px 45px 10px 45px;
+    background-color: #e4e8fc;
+    transition: border-radius 500ms,border 200ms;
+}
+.project:hover{
+    border-radius: 100px;
+    border: 5px black solid;
+
+}
+
+.project h3{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.project h3:hover{
+     text-shadow: 0px 1px black;
+}
+
+
+
+.project p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 45px 10px 45px;
+    border-radius: 10px;
+    background-color: #fec89a;
+    margin: 30px 40px 30px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Hobbies area */
+
+main h2{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hobby h3{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hobby h3:hover{
+    text-shadow: 0px 1px black;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px black solid;
+    border-radius: 20px;
+    margin: 10px 45px 10px 45px;
+    background-color: #e4e8fc;
+    transition: border-radius 500ms,border 200ms;
+}
+.hobby:hover{
+    border-radius: 100px;
+    border: 5px black solid;
+
+    
+}
+.hobby p{
+    background-color: #fec89a;
+    border-radius: 10px;
+}
+.hobby ol{
+    background-color: #fec89a;
+    border-radius: 10px;
+}
+
+main span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main h2 {
+    display: flex;
+    justify-content: center;
+}
+main div p {
+    margin: 10px 45px 10px 45px;
+    
+}
+main span div h4{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Contact Information */
+
+#contact {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ 
+#ContactBox{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-self: center;
+    border: 1px black solid;
+    width: 350px;
+    background-color:#e4e8fc;;
+    border-radius: 50px;
+}
+form div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 50px 0px 50px;
+    
+}
+form div label {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0px 0px 30px 0px;
+}
+
+form input{
+    border: 2px black solid;
+    border-radius: 10px;
+    height: 40px;
+    transition: border 100ms;
+}
+form input:hover{
+    border: 4px black solid;
+}
+button{
+    background-color: #aacc00;
+    border-radius: 10px;
+    width: 200px;
+    align-self: center;
+    margin-bottom: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+button:hover{
+
+    border: 3px black solid;
+    background-color: #a6c48a;
+    text-shadow: 0px 1px black;
+ }
+button h4 {
+    
+    font-size:x-large;
+    
+    
+}
+
+/* Footer area */
+
+footer span{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer h3{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer span div{
+    display: flex;
+    flex-direction:  row;
+    border: 1px black solid;
+    border-radius: 100px;
+    background-color: #e4e8fc;
+    transition: border 200ms;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer span div:hover{
+    display: flex;
+    flex-direction:  row;
+    border: 3px black solid;
+    border-radius: 100px;
+    background-color: #e4e8fc;
+}
+footer span div a{
+    align-self: center;
+    text-decoration: none;
+    margin: 10px 20px 10px 10px;
+}
+footer span div img {
+    height: 80px;
+    width: 80px;
+    border-radius: 400px;
+    margin: 10px 10px 10px 20px;
+}
     
 }
